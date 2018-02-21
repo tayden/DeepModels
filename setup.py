@@ -5,8 +5,11 @@ from setuptools import setup
 with open('README.md') as file:
     long_description = file.read()
 
+with open('VERSION') as file:
+    version = file.read()
+
 setup(name='Deep-Models',
-      version='0.0.2',
+      version=version,
       description='Keras deep learning model implementations',
       long_description=long_description,
       url='http://github.com/tayden/DeepModels',
