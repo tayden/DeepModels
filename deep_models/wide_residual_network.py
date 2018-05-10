@@ -122,10 +122,10 @@ def build_model(input_shape, classes=10, n=2, k=8, dropout=0.0,
     x = Activation('relu')(x)
     x = AveragePooling2D((8, 8), (1, 1), padding='same')(x)
     x = Flatten()(x)
-    _output = Dense(classes,
-                    activation='softmax',
-                    kernel_regularizer=l2(weight_decay),
-                    bias_regularizer=l2(weight_decay))(x)
+    x = Dense(classes,
+              kernel_regularizer=l2(weight_decay),
+              bias_regularizer=l2(weight_decay))(x)
+    _output = Activation('softmax')(x)
 
     if verbose:
         print('WRN-{}-{}{} created'.format(6 * n + 4, k,

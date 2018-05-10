@@ -5,7 +5,7 @@ from setuptools import setup
 with open('README.md') as file:
     long_description = file.read()
 
-version = '0.1.4'
+version = '0.1.5'
 
 setup(name='Deep-Models',
       version=version,
