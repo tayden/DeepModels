@@ -12,7 +12,7 @@ cffi==1.11.5
 chardet==3.0.4
 checkbox-support==0.38.0
 click==6.7
-cryptography==2.2.2
+cryptography==2.3
 cycler==0.10.0
 Cython==0.28.2
 decorator==4.3.0
