@@ -33,7 +33,7 @@ gunicorn==19.8.1
 gym==0.10.5
 gym-bridge==0.0.2
 h5py==2.7.1
-html5lib==0.9999999
+html5lib==0.999999999
 httplib2==0.11.3
 idna==2.6
 ipykernel==4.8.2
